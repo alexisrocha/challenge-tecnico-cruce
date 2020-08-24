@@ -1,13 +1,11 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
-import Navbar from "../navbar/Navbar";
 
 import "./Agregar.scss";
 
 export default function addModal({ handleSubmit, handleChange, name, price }) {
   return (
     <div>
-      <Navbar />
       <Form onSubmit={(event) => handleSubmit(event)} className="formGroup">
         <Form.Group className="formGroupNombre">
           <Form.Label>Nombre</Form.Label>

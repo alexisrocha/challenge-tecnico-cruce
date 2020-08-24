@@ -10,7 +10,6 @@ export default function agregarContainer({ history }) {
   const dispatch = useDispatch();
 
   const handleChange = (event) => {
-    console.log(event.target.name);
     switch (event.target.name) {
       case "nombre":
         return setNombre(event.target.value);
