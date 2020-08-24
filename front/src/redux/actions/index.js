@@ -14,5 +14,22 @@ const obtenerProductos = () => {
     });
   };
 };
+const eliminarProducto = (id) => {
+  return (dispatch) => {
+    return axios.delete(`/api/productos/${id}`);
+  };
+};
 
-export { obtenerProductos };
+const editarProducto = (id, objeto) => {
+  return (dispatch) => {
+    return axios.put(`/api/productos/${id}`, objeto);
+  };
+};
+
+const crearProducto = (objeto) => {
+  return (dispatch) => {
+    return axios.post("/api/productos", objeto);
+  };
+};
+
+export { obtenerProductos, eliminarProducto, editarProducto, crearProducto };

@@ -1,0 +1,15 @@
+.cardStyle {
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+
+.imgStyle {
+    padding-left: 20px;
+}
+
+.linkAgregar {
+    &:hover {
+        text-decoration: none;
+    }
+}
